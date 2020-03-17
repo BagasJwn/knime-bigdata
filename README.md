@@ -14,6 +14,7 @@
         * atur column to test menjadi update status
     1. Tambahkan DB Writer
         * atur timestamp dan db connection sebagai input
+        * atur tabel target menjadi NRP_model
     1. Tambahkan DB Conncetion Table Writer
         * atur ss13pme_original sebagai tujuan
 
