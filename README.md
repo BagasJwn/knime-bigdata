@@ -89,4 +89,20 @@
     ![workflow](images/db/4_hasilDB.png)
 
 * Hadoop
-    1. to do
+    1. download data-data yang dibutuhkan ([1_data](https://hub.knime.com/knime/spaces/Education/latest/04%20KNIME%20Big%20Data%20Course/2_Hadoop/1_Data/))
+    2. download workflow 0-2 ([2_exercise](https://hub.knime.com/knime/spaces/Education/latest/04%20KNIME%20Big%20Data%20Course/2_Hadoop/2_Exercises/))
+    3. execute 00_Setup_Hive_Table untuk setup local big data environment
+    
+    ## 00_Setup_Hive_Table
+
+    1. Pada node-node DB Table Creator dan DB Loader ubah nama table menjadi NRP_[Nama Tabel]
+    2. execute
+
+    ## 01_Hive_Modeling_Exercise
+
+    1. ganti SQLite Connector menjadi Create Local Big Data Environment dari exercise 00
+    2. ubah table pada DB Table Selector menjadi NRP_ss13pme
+    3. execute
+
+    final workflow:
+    ![workflow](images/Hadoop/01_workflow.png)
