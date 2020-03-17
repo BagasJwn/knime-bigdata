@@ -17,7 +17,10 @@
     1. Tambahkan DB Conncetion Table Writer
         * atur ss13pme_original sebagai tujuan
 
+    Workflow akhir:
     ![workflow](images/2.png)
+    Hasil tabel model pada DBeaver:
+    ![workflow](images/3.png)
 
 * Hadoop
     1. to do
