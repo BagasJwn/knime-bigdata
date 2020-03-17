@@ -106,3 +106,29 @@
 
     final workflow:
     ![workflow](images/Hadoop/01_workflow.png)
+    hasil tabel pada dbeaver:
+    ![workflow](images/Hadoop/01_tabless13pme.png)
+    ![workflow](images/Hadoop/01_tabless13hme.png)
+
+    ## 02
+
+    1. ubah tabel pada DB Table Selector menjadi NRP_ss13pme
+    2. tambahkan DB Table Creator
+        * atur koneksi hive dan concatenate sebagai input
+        * atur name table menjadi NRP_newTable
+    3. tambahkan Create Temp Dir
+        * uncheck create temp dir on workflow folder
+    4. tambahkan String Manipulation (Variable)
+        * atur create temp dir sebagai input
+        * atur expression menjadi:
+
+                replace(regexReplace($${Stemp_path}$$, "[A-Z]:" ,""), "\\", "/")
+    5. tambahkan DB Loader
+        * atur string manipulation, DB Table Creator, Concatenate, dan koneksi hive seabagai input
+        * atur nama table menjadi NRP_newTable
+    6. execute
+
+    final workflow:
+    ![workflow](images/Hadoop/02_workflow.png)
+    tabel pada dbeaver:
+    ![table](images/Hadoop/02_tablenewTable.png)
